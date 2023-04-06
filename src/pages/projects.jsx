@@ -8,8 +8,19 @@ import logoCosmos from '@/images/logos/cosmos.svg'
 import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoVerbund from '@/images/logos/verbund.jpeg'
 
 const projects = [
+  {
+    name: 'Verbund VISION',
+    description:
+      'Creating technology to empower civilians to explore space on their own terms.',
+    link: {
+      href: 'https://www.verbund.com/de-at/geschaeftskunden/online-services/grosskundenportal-vision',
+      label: 'verbund.com',
+    },
+    logo: logoVerbund,
+  },
   {
     name: 'Planetaria',
     description:
@@ -82,7 +93,7 @@ export default function Projects() {
                 <Image
                   src={project.logo}
                   alt=""
-                  className="h-8 w-8"
+                  className="h-8 w-8 rounded-full"
                   unoptimized
                 />
               </div>

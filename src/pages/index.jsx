@@ -15,12 +15,17 @@ import {
 import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoVerbund from '@/images/logos/verbund.jpeg'
+import logoEnlivio from '@/images/logos/enlivio.png'
+import logoWaytation from '@/images/logos/waytation.png'
+import logoMediashop from '@/images/logos/mediashop.svg'
 import logoStarbucks from '@/images/logos/starbucks.svg'
 import image1 from '@/images/photos/andreas-siedler-1.jpeg'
 import image2 from '@/images/photos/andreas-siedler-2.jpeg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/andreas-siedler-3.jpeg'
 import image5 from '@/images/photos/image-4.jpg'
+import feedback1 from '@/images/cemsit-yelgin.jpeg'
 import { formatDate } from '@/lib/formatDate'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
@@ -101,7 +106,7 @@ function Article({ article }) {
 
 function SocialLink({ icon: Icon, ...props }) {
   return (
-    <Link className="group -m-1 p-1" {...props}>
+    <Link className="group -m-1 p-1" {...props} target="_blank">
       <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
     </Link>
   )
@@ -139,35 +144,35 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
-      start: '2019',
+      company: 'Verbund VISION',
+      title: 'Frontend Developer',
+      logo: logoVerbund,
+      start: '2022',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
+      company: 'Enlivio',
+      title: 'Full-Stack Developer',
+      logo: logoEnlivio,
+      start: '2020',
+      end: '2021',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
+      company: 'Mediashop',
+      title: 'Frontend Developer',
+      logo: logoMediashop,
+      start: '2020',
+      end: '2022',
     },
     {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      company: 'Waytation',
+      title: 'Full-Stack Developer',
+      logo: logoWaytation,
+      start: '2019',
+      end: '2020',
     },
   ]
 
@@ -181,7 +186,12 @@ function Resume() {
         {resume.map((role, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
             <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-              <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
+              <Image
+                src={role.logo}
+                alt=""
+                className="h-7 w-7 rounded-full"
+                unoptimized
+              />
             </div>
             <dl className="flex flex-auto flex-wrap gap-x-2">
               <dt className="sr-only">Company</dt>
@@ -219,6 +229,43 @@ function Resume() {
   )
 }
 
+function Feedback() {
+  return (
+    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+        <BriefcaseIcon className="h-6 w-6 flex-none" />
+        <span className="ml-3">Feedback</span>
+      </h2>
+      <figure className="mt-6 flex flex-auto flex-col justify-between ">
+        <blockquote className="text-sm italic text-zinc-900 dark:text-zinc-100">
+          <p>
+            &quot;Als Fullstack Developer hat Herr Siedler den Erwartungen des
+            Unternehmens, der Mitarbeiter und der Kunden in jeglicher Hinsicht
+            und in allerbester Weise entsprochen. Er erfüllte seine Aufgaben zu
+            unserer vollsten Zufriedenheit, mit außerordentlichem Engagement und
+            höchstem Maße an Eigeninitiative, Zielorientierung und
+            Professionalität.&quot;
+          </p>
+        </blockquote>
+        <figcaption className="mt-10 flex items-center gap-x-4">
+          <Image
+            src={feedback1}
+            alt=""
+            className="h-10 w-10 rounded-full"
+            unoptimized
+          />
+          <div className="text-base">
+            <div className="font-semibold text-zinc-900 dark:text-zinc-100">
+              Cemsit Yelgin
+            </div>
+            <div className="text-sm text-gray-400">CEO of Waytation</div>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+  )
+}
+
 function Photos() {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
 
@@ -251,47 +298,58 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Andreas Siedler - Software designer, founder, and amateur astronaut
+          Andreas Siedler - Software designer, freelancer, and dog lover
         </title>
         <meta
           name="description"
-          content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+          content="Hi, I'm Andreas – a software developer, freelancer, and enthusiastic dog lover. I've spent years developing software solutions for businesses and individuals."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, founder, and dog lover.
+            Software designer, freelancer, and dog lover.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Hi, I&aposm Andreas – a software developer, founder, and
-            enthusiastic dog lover. I&aposve spent years developing software
+            Hi, I&apos;m Andreas – a software developer, freelancer, and
+            enthusiastic dog lover. I&apos;ve spent years developing software
+            solutions for businesses and individuals. In my free time,
+            you&apos;ll likely find me playing with my furry best friend. As a
+            dedicated dog lover, I understand the importance of patience,
+            loyalty, and hard work – qualities that I bring to my professional
+            life as well. With a passion for both technology and animals, I
+            offer a unique perspective and diverse skill set to everything I do.
+          </p>
+          {/* Original */}
+          {/* <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+            Hi, I&apos;m Andreas – a software developer, founder, and
+            enthusiastic dog lover. I&apos;ve spent years developing software
             solutions for businesses and individuals, and have even launched my
-            own successful startup. In my free time, you&aposll likely find me
+            own successful startup. In my free time, you&apos;ll likely find me
             playing with my furry best friend. As a dedicated dog lover, I
             understand the importance of patience, loyalty, and hard work –
             qualities that I bring to my professional life as well. With a
             passion for both technology and animals, I offer a unique
             perspective and diverse skill set to everything I do.
-          </p>
+          </p> */}
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://twitter.com"
+              href="https://twitter.com/SiedlerAndreas"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
             />
-            <SocialLink
+            {/* <SocialLink
               href="https://instagram.com"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
-            />
+            /> */}
             <SocialLink
-              href="https://github.com"
+              href="https://github.com/AndreasSiedler"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/andreas-siedler-8415a8b8/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
@@ -307,8 +365,9 @@ export default function Home({ articles }) {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
+            {/* <Newsletter /> */}
             <Resume />
+            <Feedback />
           </div>
         </div>
       </Container>
