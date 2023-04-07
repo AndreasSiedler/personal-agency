@@ -9,12 +9,14 @@ import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 import logoVerbund from '@/images/logos/verbund.jpeg'
+import logoEnlivio from '@/images/logos/enlivio.png'
+import logoMediashop from '@/images/logos/mediashop.svg'
 
 const projects = [
   {
     name: 'Verbund VISION',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
+      'Supporting the development team in the development of the VISON service portal.',
     link: {
       href: 'https://www.verbund.com/de-at/geschaeftskunden/online-services/grosskundenportal-vision',
       label: 'verbund.com',
@@ -22,40 +24,40 @@ const projects = [
     logo: logoVerbund,
   },
   {
-    name: 'Planetaria',
+    name: 'Enlivio',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+      'State of the art development of a Flutter app with Flutter and Tensorflow.',
+    link: { href: 'https://www.enlivio.com/', label: 'enlivio.com' },
+    logo: logoEnlivio,
   },
   {
-    name: 'Animaginary',
+    name: 'Mediashop',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+      'In a team of passionate developers, we were building a headless shop-system.',
+    link: { href: 'https://www.mediashop.tv/', label: 'mediashop.tv' },
+    logo: logoMediashop,
   },
-  {
-    name: 'HelioStream',
-    description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
-  },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
-  },
+  // {
+  //   name: 'HelioStream',
+  //   description:
+  //     'Real-time video streaming library, optimized for interstellar transmission.',
+  //   link: { href: '#', label: 'github.com' },
+  //   logo: logoHelioStream,
+  // },
+  // {
+  //   name: 'cosmOS',
+  //   description:
+  //     'The operating system that powers our Planetaria space shuttles.',
+  //   link: { href: '#', label: 'github.com' },
+  //   logo: logoCosmos,
+  // },
+  // {
+  //   name: 'OpenShuttle',
+  //   description:
+  //     'The schematics for the first rocket I designed that successfully made it to orbit.',
+  //   link: { href: '#', label: 'github.com' },
+  //   logo: logoOpenShuttle,
+  // },
 ]
 
 function LinkIcon(props) {
@@ -73,15 +75,15 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects - Spencer Sharp</title>
+        <title>Projects - Andreas Siedler</title>
         <meta
           name="description"
           content="Things I’ve made trying to put my dent in the universe."
         />
       </Head>
       <SimpleLayout
-        title="Things I’ve made trying to put my dent in the universe."
-        intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+        title="These are the things I've created in my attempt to make a mark on the world."
+        intro="Welcome to my projects page! Here, you will find a collection of my most notable and impactful projects that I am proud to showcase. Each project includes a link to the product, allowing you to explore and interact with the final result. Thank you for taking the time to browse through my portfolio and I hope you find my work inspiring and informative."
       >
         <ul
           role="list"

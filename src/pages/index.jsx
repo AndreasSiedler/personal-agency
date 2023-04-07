@@ -144,7 +144,7 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-      company: 'Verbund VISION',
+      company: 'Verbund',
       title: 'Frontend Developer',
       logo: logoVerbund,
       start: '2022',
