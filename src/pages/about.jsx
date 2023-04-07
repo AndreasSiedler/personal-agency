@@ -1,7 +1,7 @@
+import clsx from 'clsx'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import {
@@ -10,12 +10,13 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait.jpg'
+import portraitImage from '@/images/andreas-siedler-portrait.jpg'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
     <li className={clsx(className, 'flex')}>
       <Link
+        target="_blank"
         href={href}
         className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
       >
@@ -61,58 +62,84 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Spencer Sharp. I live in New York City, where I design the
-              future.
+              Hi there, my name is Andreas and I am a passionate software
+              developer based in Vienna.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                I’ve loved making things for as long as I can remember, and
-                wrote my first program when I was 6 years old, just two weeks
-                after my mom brought home the brand new Macintosh LC 550 that I
-                taught myself to type on.
+                For as long as I can remember, I have always been fascinated by
+                the way technology works and how it can be leveraged to solve
+                real-world problems. Over the years, I have gained a wealth of
+                experience in software development, and I am now proud to offer
+                my expertise to companies and individuals who are seeking to
+                bring their ideas to life.
               </p>
               <p>
-                The only thing I loved more than computers as a kid was space.
-                When I was 8, I climbed the 40-foot oak tree at the back of our
-                yard while wearing my older sister’s motorcycle helmet, counted
-                down from three, and jumped — hoping the tree was tall enough
-                that with just a bit of momentum I’d be able to get to orbit.
+                As a freelancer, I take a unique approach to each project I
+                undertake. I believe that the key to successful software
+                development lies in understanding the unique needs of each
+                client and working closely with them to create innovative and
+                effective solutions. Whether you&apos;re a startup looking to
+                build a new product from scratch, or an established business
+                seeking to improve your existing software, I am here to help you
+                achieve your goals.
               </p>
               <p>
-                I spent the next few summers indoors working on a rocket design,
-                while I recovered from the multiple surgeries it took to fix my
-                badly broken legs. It took nine iterations, but when I was 15 I
-                sent my dad’s Blackberry into orbit and was able to transmit a
-                photo back down to our family computer from space.
+                One of the things I love most about software development is the
+                endless possibilities it presents. There is always something new
+                to learn, a new tool to master, or a new challenge to overcome.
+                I am constantly expanding my skill set, learning new programming
+                languages, and exploring new frameworks and technologies. This
+                allows me to stay at the cutting edge of the industry and to
+                offer my clients the very best in software development.
               </p>
               <p>
-                Today, I’m the founder of Planetaria, where we’re working on
-                civilian space suits and manned shuttle kits you can assemble at
-                home so that the next generation of kids really <em>can</em>{' '}
-                make it to orbit — from the comfort of their own backyards.
+                When I&apos;m not busy coding, you can usually find me spending
+                time with my furry friend, a lovable and energetic dog. I
+                believe that a balanced life is essential for creativity and
+                productivity, and I always make time for the things that matter
+                most to me.
+              </p>
+              <p>
+                So, if you&apos;re looking for a skilled software developer who
+                is passionate, creative, and dedicated to delivering results,
+                then look no further than me. I am excited to work with you to
+                bring your ideas to life and to help you achieve your goals. Get
+                in touch with me today to learn more about how I can help you!
               </p>
             </div>
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href="#" icon={TwitterIcon}>
+              <SocialLink
+                href="https://twitter.com/SiedlerAndreas"
+                icon={TwitterIcon}
+              >
                 Follow on Twitter
               </SocialLink>
-              <SocialLink href="#" icon={InstagramIcon} className="mt-4">
+              {/* <SocialLink href="#" icon={InstagramIcon} className="mt-4">
                 Follow on Instagram
-              </SocialLink>
-              <SocialLink href="#" icon={GitHubIcon} className="mt-4">
+              </SocialLink> */}
+              <SocialLink
+                href="https://github.com/AndreasSiedler"
+                icon={GitHubIcon}
+                className="mt-4"
+              >
                 Follow on GitHub
               </SocialLink>
-              <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
+              <SocialLink
+                href="https://www.linkedin.com/in/andreas-siedler-8415a8b8/"
+                icon={LinkedInIcon}
+                className="mt-4"
+              >
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink
-                href="mailto:spencer@planetaria.tech"
+                href="mailto:andreas.siedler@gmail.com"
                 icon={MailIcon}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
-                spencer@planetaria.tech
+                andreas.siedler@gmail.com
               </SocialLink>
             </ul>
           </div>
