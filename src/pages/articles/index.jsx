@@ -41,12 +41,12 @@ export default function ArticlesIndex({ articles }) {
         <title>Articles - Spencer Sharp</title>
         <meta
           name="description"
-          content="All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order."
+          content="Welcome to my blog! Here, I share my thoughts and insights on the latest software development topics and IT trends."
         />
       </Head>
       <SimpleLayout
-        title="Writing on software design, company building, and the aerospace industry."
-        intro="All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order."
+        title="Welcome to my blog! Here, I share my thoughts and insights on the latest software development topics and IT trends."
+        intro="As a passionate software developer and IT enthusiast, I am constantly exploring new technologies, programming languages, and best practices in the field. Through this blog, I aim to share my knowledge and experience with others in the industry and to contribute to the ongoing conversation around software development and innovation."
       >
         <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
           <div className="flex max-w-3xl flex-col space-y-16">
