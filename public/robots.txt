@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.andreassiedler.com/
+
+# Sitemaps
+Sitemap: https://www.andreassiedler.com/sitemap.xml
