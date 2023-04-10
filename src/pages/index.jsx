@@ -25,6 +25,7 @@ import image2 from '@/images/photos/andreas-siedler-2.jpeg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/andreas-siedler-3.jpeg'
 import image5 from '@/images/photos/image-4.jpg'
+import image6 from '@/images/photos/andreas-siedler-5.jpeg'
 import feedback1 from '@/images/cemsit-yelgin.jpeg'
 import { formatDate } from '@/lib/formatDate'
 import { generateRssFeed } from '@/lib/generateRssFeed'
@@ -272,7 +273,7 @@ function Photos() {
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image3, image1, image2, image4, image5].map((image, imageIndex) => (
+        {[image3, image1, image2, image4, image6].map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
