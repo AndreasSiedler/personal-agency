@@ -74,13 +74,13 @@ export default function About() {
               Ich bin Andreas
             </h1>
             <FancyHeading /> */}
-            <h1 className="mb-2 overflow-x-hidden font-mono text-4xl font-bold dark:text-gray-100 md:text-6xl">
+            <h1 className="mb-2 overflow-x-hidden font-mono text-4xl font-bold text-zinc-700 dark:text-gray-100 md:text-6xl">
               hi, ich bin <br className="block md:hidden" />
               <span className="relative">
                 <span className="h-20 overflow-x-hidden whitespace-nowrap pt-2 text-teal-400">
                   andreas. <span className="text-3xl md:text-5xl">👋</span>
                 </span>
-                <span className="{`${styles.cursor} will-change`} cursor absolute -bottom-0 left-0 -top-1 inline-block w-full animate-type bg-white dark:bg-zinc-900"></span>
+                <span className="{`${styles.cursor} will-change`} cursor absolute -bottom-0 left-0 -top-1 inline-block w-full animate-type bg-white after:bg-zinc-700 dark:bg-zinc-900 dark:after:bg-white"></span>
               </span>
             </h1>
 

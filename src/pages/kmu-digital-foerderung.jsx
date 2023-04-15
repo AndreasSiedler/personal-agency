@@ -53,13 +53,13 @@ export default function KmuDigitalFörderungPage() {
       <Container className="mt-16 sm:mt-32">
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
           <div className="lg:order-first lg:row-span-2">
-            <h1 className="mb-2 overflow-x-hidden font-mono text-4xl text-gray-100 md:text-6xl">
-              KMU.DIGITAL <br className="block md:hidden" />
+            <h1 className="mb-2 overflow-x-hidden font-mono text-4xl font-bold text-zinc-700 dark:text-gray-100 md:text-6xl">
+              kmu.DIGITAL <br className="block md:hidden" />
               <span className="relative">
                 <span className="h-20 overflow-x-hidden whitespace-nowrap pt-2 text-teal-400">
                   förderung. <span className="text-3xl md:text-5xl">👋</span>
                 </span>
-                <span className="{`${styles.cursor} will-change`} cursor absolute -bottom-0 left-0 -top-1 inline-block w-full animate-type bg-white dark:bg-zinc-900"></span>
+                <span className="{`${styles.cursor} will-change`} cursor absolute -bottom-0 left-0 -top-1 inline-block w-full animate-type bg-white after:bg-zinc-700 dark:bg-zinc-900 dark:after:bg-white"></span>
               </span>
             </h1>
 
