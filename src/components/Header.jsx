@@ -121,11 +121,19 @@ function MobileNavigation(props) {
             </div>
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-                <MobileNavItem href="/about">About</MobileNavItem>
-                <MobileNavItem href="/articles">Articles</MobileNavItem>
-                <MobileNavItem href="/projects">Projects</MobileNavItem>
+                <MobileNavItem href="/about">Über mich</MobileNavItem>
+                <MobileNavItem href="/articles">Artikel</MobileNavItem>
+                <MobileNavItem href="/projects">Projekte</MobileNavItem>
                 {/* <MobileNavItem href="/speaking">Speaking</MobileNavItem> */}
-                <MobileNavItem href="/uses">Uses</MobileNavItem>
+                {/* <MobileNavItem href="/uses">Uses</MobileNavItem> */}
+                <MobileNavItem
+                  className="whitespace-nowrap"
+                  href="/kmu-digital-foerderung"
+                >
+                  <span className="rounded-full bg-teal-400 py-1 px-2 text-white">
+                    -30% Bonus
+                  </span>
+                </MobileNavItem>
               </ul>
             </nav>
           </Popover.Panel>
@@ -135,7 +143,7 @@ function MobileNavigation(props) {
   )
 }
 
-function NavItem({ href, children }) {
+function NavItem({ className, href, children }) {
   let isActive = useRouter().pathname === href
 
   return (
@@ -146,7 +154,8 @@ function NavItem({ href, children }) {
           'relative block px-3 py-2 transition',
           isActive
             ? 'text-teal-500 dark:text-teal-400'
-            : 'hover:text-teal-500 dark:hover:text-teal-400'
+            : 'hover:text-teal-500 dark:hover:text-teal-400',
+          className
         )}
       >
         {children}
@@ -162,11 +171,19 @@ function DesktopNavigation(props) {
   return (
     <nav {...props}>
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-        <NavItem href="/about">About</NavItem>
-        <NavItem href="/articles">Articles</NavItem>
-        <NavItem href="/projects">Projects</NavItem>
+        <NavItem className="whitespace-nowrap" href="/about">
+          Über mich
+        </NavItem>
+        <NavItem href="/articles">Artikel</NavItem>
+        <NavItem href="/projects">Projekte</NavItem>
         {/* <NavItem href="/speaking">Speaking</NavItem> */}
-        <NavItem href="/uses">Uses</NavItem>
+        {/* <NavItem href="/uses">Team</NavItem> */}
+        {/* <NavItem href="/uses">Uses</NavItem> */}
+        <NavItem className="whitespace-nowrap" href="/kmu-digital-foerderung">
+          <span className="rounded-full bg-teal-400 py-1 px-2 text-white">
+            -30% Bonus
+          </span>
+        </NavItem>
       </ul>
     </nav>
   )

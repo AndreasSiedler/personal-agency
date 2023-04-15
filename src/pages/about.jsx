@@ -4,13 +4,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { Container } from '@/components/Container'
-import {
-  GitHubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  TwitterIcon,
-} from '@/components/SocialIcons'
+import { GitHubIcon, TwitterIcon } from '@/components/SocialIcons'
 import portraitImage from '@/images/andreas-siedler-portrait.jpg'
+import { CalendarIcon } from '@heroicons/react/20/solid'
 
 function SocialLink({ className, target, href, children, icon: Icon }) {
   return (
@@ -69,7 +65,62 @@ export default function About() {
             </div>
           </div>
           <div className="lg:order-first lg:row-span-2">
-            <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+            {/* <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+              Hallo! 👋 <br />
+              Ich bin Andreas, Entwickler aus Wien
+            </h1> */}
+            {/* <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+              Hallo! 👋 <br />
+              Ich bin Andreas
+            </h1>
+            <FancyHeading /> */}
+            <h1 className="mb-2 overflow-x-hidden font-mono text-4xl text-gray-100 md:text-6xl">
+              hi, ich bin <br className="block md:hidden" />
+              <span className="relative">
+                <span className="h-20 overflow-x-hidden whitespace-nowrap pt-2 text-teal-400">
+                  andreas. <span className="text-3xl md:text-5xl">👋</span>
+                </span>
+                <span className="{`${styles.cursor} will-change`} cursor absolute -bottom-0 left-0 -top-1 inline-block w-full animate-type bg-white dark:bg-zinc-900"></span>
+              </span>
+            </h1>
+
+            <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+              <p>
+                Ich liebe es, Websites und Anwendungen zu entwickeln, die das
+                Leben der Menschen erleichtern und verbessern. Ich habe mich auf
+                React und Flutter im Frontend sowie Python Django und NodeJS mit
+                Express im Backend spezialisiert und verfüge über umfangreiche
+                Kenntnisse in verschiedenen Programmiersprachen und Frameworks
+                wie Angular und NextJS sowie Laravel.
+              </p>
+              <p>
+                Ich arbeite schon seit einigen Jahren als Entwickler und habe
+                mich darauf spezialisiert, Anwendungen für kleinere Unternehmen
+                und Privatpersonen zu gestalten und umzusetzen. Es ist einfach
+                großartig, wenn man eine Idee hat und sie in die Tat umsetzen
+                kann. Ich bin stolz darauf, jedes Projekt von Anfang bis Ende
+                betreuen zu können, um sicherzustellen, dass das Endprodukt
+                perfekt ist.
+              </p>
+              <p>
+                Ich finde es auch toll, bei der Gestaltung von Anwendungen
+                mitzuhelfen, um sie einzigartig und ansprechend zu gestalten.
+                Dabei gebe ich mein Bestes, um das Projekt so zu gestalten, dass
+                es den Wünschen und Bedürfnissen des Kunden entspricht.
+              </p>
+              <p>
+                Wenn du jemanden suchst, der mit Leidenschaft und Engagement an
+                deinem Projekt arbeitet, bin ich gerne für dich da. Darüber
+                hinaus kann ich auch bei der Beantragung von Fördermitteln wie
+                KMU digital unterstützen, mit denen du bis zu 30% der Kosten
+                einsparen kannst.
+              </p>
+              <p>
+                Ich freue mich darauf, von dir zu hören und gemeinsam mit dir
+                großartige Projekte zu realisieren.
+              </p>
+            </div>
+            {/* <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
               Hi there, my name is Andreas and I am a passionate software
               developer based in Vienna.
             </h1>
@@ -115,7 +166,7 @@ export default function About() {
                 bring your ideas to life and to help you achieve your goals. Get
                 in touch with me today to learn more about how I can help you!
               </p>
-            </div>
+            </div> */}
           </div>
           <div className="lg:pl-20">
             <ul role="list">
@@ -137,14 +188,14 @@ export default function About() {
               >
                 Follow on GitHub
               </SocialLink>
-              <SocialLink
+              {/* <SocialLink
                 target={'_blank'}
                 href="https://www.linkedin.com/in/andreas-siedler-8415a8b8/"
                 icon={LinkedInIcon}
                 className="mt-4"
               >
                 Follow on LinkedIn
-              </SocialLink>
+              </SocialLink> */}
               <SocialLink
                 target={'_blank'}
                 href="mailto:andreas.siedler@gmail.com"
@@ -159,6 +210,14 @@ export default function About() {
                 className="mt-4"
               >
                 +43 676 945 75 66
+              </SocialLink>
+              <SocialLink
+                target="_blank"
+                href="https://calendly.com/andreassiedler/infogesprach"
+                className="mt-4"
+                icon={CalendarIcon}
+              >
+                Google Meeting
               </SocialLink>
             </ul>
           </div>
