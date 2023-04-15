@@ -74,7 +74,7 @@ export default function About() {
               Ich bin Andreas
             </h1>
             <FancyHeading /> */}
-            <h1 className="mb-2 overflow-x-hidden font-mono text-4xl text-gray-100 md:text-6xl">
+            <h1 className="mb-2 overflow-x-hidden font-mono text-4xl font-bold dark:text-gray-100 md:text-6xl">
               hi, ich bin <br className="block md:hidden" />
               <span className="relative">
                 <span className="h-20 overflow-x-hidden whitespace-nowrap pt-2 text-teal-400">
