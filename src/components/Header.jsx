@@ -6,7 +6,7 @@ import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import avatarImage from '@/images/andreas-siedler-portrait.jpg'
+import logoImage from '@/images/logo-andreas-siedler.jpg'
 import { useTheme } from 'next-themes'
 
 function CloseIcon(props) {
@@ -236,8 +236,9 @@ function Avatar({ large = false, className, ...props }) {
       {...props}
     >
       <Image
-        src={avatarImage}
-        alt=""
+        id="logo"
+        src={logoImage}
+        alt="logo-andreas-siedler"
         sizes={large ? '4rem' : '2.25rem'}
         className={clsx(
           'rounded-full bg-zinc-100 object-cover dark:bg-zinc-800',
