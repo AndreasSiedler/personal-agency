@@ -9,6 +9,9 @@ const nextConfig = {
   experimental: {
     scrollRestoration: true,
   },
+  env: {
+    GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID,
+  }
 }
 
 const withMDX = nextMDX({
