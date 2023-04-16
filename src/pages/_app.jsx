@@ -4,9 +4,10 @@ import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import Script from 'next/script'
 
+import Banner from '@/components/Banner'
 import '@/styles/tailwind.css'
 import 'focus-visible'
-import Banner from '@/components/Banner'
+import { ThemeProvider } from 'next-themes'
 
 function usePrevious(value) {
   let ref = useRef()
@@ -22,7 +23,7 @@ export default function App({ Component, pageProps, router }) {
   let previousPathname = usePrevious(router.pathname)
 
   return (
-    <>
+    <ThemeProvider attribute="class">
       <Script
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_ID}`}
@@ -52,6 +53,6 @@ export default function App({ Component, pageProps, router }) {
         </main>
         <Footer />
       </div>
-    </>
+    </ThemeProvider>
   )
 }
