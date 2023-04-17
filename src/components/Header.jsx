@@ -123,16 +123,13 @@ function MobileNavigation(props) {
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
                 <MobileNavItem href="/about">Über mich</MobileNavItem>
-                <MobileNavItem href="/articles">Artikel</MobileNavItem>
                 <MobileNavItem href="/projects">Projekte</MobileNavItem>
+                <MobileNavItem href="/articles">Artikel</MobileNavItem>
                 {/* <MobileNavItem href="/speaking">Speaking</MobileNavItem> */}
                 {/* <MobileNavItem href="/uses">Uses</MobileNavItem> */}
-                <MobileNavItem
-                  className="whitespace-nowrap"
-                  href="/kmu-digital-foerderung"
-                >
+                <MobileNavItem className="whitespace-nowrap" href="/campaigns">
                   <span className="rounded-full bg-teal-400 py-1 px-2 text-white">
-                    Rabatt
+                    Aktionen
                   </span>
                 </MobileNavItem>
               </ul>
@@ -181,7 +178,7 @@ function DesktopNavigation(props) {
         {/* <NavItem href="/speaking">Speaking</NavItem> */}
         {/* <NavItem href="/uses">Team</NavItem> */}
         {/* <NavItem href="/uses">Uses</NavItem> */}
-        <NavItem className="whitespace-nowrap" href="/kmu-digital-foerderung">
+        <NavItem className="whitespace-nowrap" href="/campaigns">
           <span className="rounded-full bg-teal-400 py-1 px-2 text-white">
             Aktionen
           </span>
