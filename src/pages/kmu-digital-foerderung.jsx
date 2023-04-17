@@ -53,53 +53,54 @@ export default function KmuDigitalFörderungPage() {
       <Container className="mt-16 sm:mt-32">
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
           <div className="lg:order-first lg:row-span-2">
-            <h1 className="mb-2 overflow-x-hidden font-mono text-4xl font-bold text-zinc-700 dark:text-gray-100 md:text-6xl">
-              kmu.DIGITAL <br className="block md:hidden" />
-              <span className="relative">
-                <span className="h-20 overflow-x-hidden whitespace-nowrap pt-2 text-teal-400">
-                  förderung. <span className="text-3xl md:text-5xl">👋</span>
-                </span>
-                <span className="{`${styles.cursor} will-change`} cursor absolute -bottom-0 left-0 -top-1 inline-block w-full animate-type bg-white after:bg-zinc-700 dark:bg-zinc-900 dark:after:bg-white"></span>
-              </span>
-            </h1>
-
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+              <h1 className="mb-2 overflow-x-hidden font-mono text-4xl font-bold text-zinc-700 dark:text-gray-100 md:text-6xl">
+                frühjahrs angebot <br className="block md:hidden" />
+                <span className="relative">
+                  <span className="h-20 overflow-x-hidden whitespace-nowrap pt-2 text-teal-400">
+                    10% Rabatt <span className="text-3xl md:text-5xl">👋</span>
+                  </span>
+                  <span className="{`${styles.cursor} will-change`} cursor absolute -bottom-0 left-0 -top-1 inline-block w-full animate-type bg-white after:bg-zinc-700 dark:bg-zinc-900 dark:after:bg-white"></span>
+                </span>
+              </h1>
+
               <p>
-                Willkommen. Sie sind ein kleines oder mittelständisches
-                Unternehmen und interessieren sich für die KMU.Digital
-                Förderung? Dann sind Sie bei mir genau richtig!
+                Ich wollte euch nur schnell mitteilen, dass wir gerade ein mega
+                Frühjahrsangebot haben! Wenn ihr ein neues Projekt starten wollt
+                oder eine bestehende Idee weiterentwickeln möchtet, dann ist
+                jetzt der perfekte Zeitpunkt, um zuzuschlagen. Denn wir bieten
+                aktuell 10% Rabatt auf alle Projekte. Also worauf wartet ihr
+                noch? Schickt mir eure Ideen und wir können loslegen!
+              </p>
+            </div>
+            <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+              <h1 className="mb-2 overflow-x-hidden font-mono text-4xl font-bold text-zinc-700 dark:text-gray-100 md:text-6xl">
+                startups <br className="block md:hidden" />
+                <span className="relative">
+                  <span className="h-20 overflow-x-hidden whitespace-nowrap pt-2 text-teal-400">
+                    beteiligung.{' '}
+                    <span className="text-3xl md:text-5xl">👋</span>
+                  </span>
+                  <span className="{`${styles.cursor} will-change`} cursor absolute -bottom-0 left-0 -top-1 inline-block w-full animate-type bg-white after:bg-zinc-700 dark:bg-zinc-900 dark:after:bg-white"></span>
+                </span>
+              </h1>
+              <p>
+                Du hast eine coole Idee als Startup, aber wenig Geld? Ich bin
+                bereit, die Entwicklung für eine Beteiligung am Startup zu
+                übernehmen.
               </p>
               <p>
-                Ich biete Ihnen professionelle Unterstützung bei der Umsetzung
-                Ihrer Digitalprojekte. Als Webentwickler habe ich mich darauf
-                spezialisiert, Websites, Online-Shops und andere digitale
-                Lösungen zu erstellen und zu optimieren. Mit meiner Erfahrung
-                und meinem Know-how kann ich Sie bei der Umsetzung Ihrer
-                digitalen Projekte unterstützen und sicherstellen, dass Sie das
-                Beste aus der KMU.Digital Förderung herausholen.
+                Als Startup mit einer vielversprechenden Idee und begrenzten
+                finanziellen Ressourcen kann es schwer sein, die notwendigen
+                Entwicklungsressourcen zu finden. Aber wenn deine Idee mich
+                anspricht, stehe ich gerne zur Verfügung, um die Entwicklung
+                umzusetzen - im Austausch gegen eine Beteiligung am Startup.
+                Zusammen können wir deine Vision zum Leben erwecken und dein
+                Unternehmen zum Erfolg führen.
               </p>
               <p>
-                Die KMU.Digital Förderung bietet Ihnen die Möglichkeit, bis zu
-                3.000 EUR für Beratungsleistungen und bis zu 6.000 EUR für die
-                Umsetzung Ihrer Digitalprojekte zu erhalten. Ich unterstütze Sie
-                bei der Umsetzung Ihrer geplanten Maßnahmen, indem ich Ihnen
-                dabei helfe, eine professionelle und effektive Website oder
-                einen Online-Shop zu erstellen oder Ihre
-                Online-Marketing-Aktivitäten zu optimieren.
-              </p>
-              <p>
-                Ich verstehe die Bedürfnisse von kleinen und mittelständischen
-                Unternehmen und biete maßgeschneiderte Lösungen an, die auf Ihre
-                individuellen Anforderungen zugeschnitten sind. Gemeinsam können
-                wir Ihre Ideen und Ziele in die Tat umsetzen und sicherstellen,
-                dass Ihre Investitionen in die Digitalisierung erfolgreich sind.
-              </p>
-              <p>
-                Kontaktieren Sie mich noch heute, um mehr über meine
-                Dienstleistungen als Webentwickler und meine Unterstützung bei
-                der Beantragung der KMU.Digital Förderung zu erfahren. Ich freue
-                mich darauf, Ihnen bei der Realisierung Ihrer digitalen Projekte
-                zu helfen!
+                Zusammen können wir deine Vision zum Leben erwecken und dein
+                Unternehmen zum Erfolg führen.
               </p>
             </div>
           </div>

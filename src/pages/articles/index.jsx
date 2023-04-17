@@ -21,7 +21,7 @@ function Article({ article }) {
           {formatDate(article.date)}
         </Card.Eyebrow>
         <Card.Description>{article.description}</Card.Description>
-        <Card.Cta>Read article</Card.Cta>
+        <Card.Cta>Artikel lesen</Card.Cta>
       </Card>
       <Card.Eyebrow
         as="time"
@@ -45,8 +45,9 @@ export default function ArticlesIndex({ articles }) {
         />
       </Head>
       <SimpleLayout
-        title="Here, I share my thoughts and insights on the latest software development topics and IT trends."
-        intro="Welcome to my blog! As a passionate software developer and IT enthusiast, I am constantly exploring new technologies, programming languages, and best practices in the field. Through this blog, I aim to share my knowledge and experience with others in the industry and to contribute to the ongoing conversation around software development and innovation."
+        title="Ich begrüße Sie herzlich auf "
+        fancyTitle="meinem Blog!"
+        intro="Hier schreibe ich über die spannende Welt der Web- und Appentwicklung, teile meine Erfahrungen als Freelancer und gebe Tipps für angehende Entwickler."
       >
         <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
           <div className="flex max-w-3xl flex-col space-y-16">

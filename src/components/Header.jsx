@@ -132,7 +132,7 @@ function MobileNavigation(props) {
                   href="/kmu-digital-foerderung"
                 >
                   <span className="rounded-full bg-teal-400 py-1 px-2 text-white">
-                    -30% Bonus
+                    Rabatt
                   </span>
                 </MobileNavItem>
               </ul>
@@ -175,14 +175,15 @@ function DesktopNavigation(props) {
         <NavItem className="whitespace-nowrap" href="/about">
           Über mich
         </NavItem>
-        <NavItem href="/articles">Artikel</NavItem>
         <NavItem href="/projects">Projekte</NavItem>
+        <NavItem href="/articles">Artikel</NavItem>
+
         {/* <NavItem href="/speaking">Speaking</NavItem> */}
         {/* <NavItem href="/uses">Team</NavItem> */}
         {/* <NavItem href="/uses">Uses</NavItem> */}
         <NavItem className="whitespace-nowrap" href="/kmu-digital-foerderung">
           <span className="rounded-full bg-teal-400 py-1 px-2 text-white">
-            -30% Bonus
+            Aktionen
           </span>
         </NavItem>
       </ul>

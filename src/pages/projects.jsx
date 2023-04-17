@@ -3,20 +3,22 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoVerbund from '@/images/logos/verbund.jpeg'
+import feedback1 from '@/images/cemsit-yelgin.jpeg'
+import feedback2 from '@/images/markus-steinrisser.jpeg'
+import bookingDoc from '@/images/logos/booking-doc.png'
 import logoEnlivio from '@/images/logos/enlivio.png'
 import logoMediashop from '@/images/logos/mediashop.svg'
+import logoVerbund from '@/images/logos/verbund.jpeg'
+import logoWaytation from '@/images/logos/waytation.png'
+import logoApoolco from '@/images/logos/apoolco.jpeg'
+
+import { BriefcaseIcon } from '@heroicons/react/20/solid'
 
 const projects = [
   {
     name: 'Verbund VISION',
     description:
-      'Supporting the development team in the development of the VISON service portal.',
+      'Gemeinsam mit einem motivierten Team von Experten setzen wir neue Funktionen für das VISION Service Portal um.',
     link: {
       href: 'https://www.verbund.com/de-at/geschaeftskunden/online-services/grosskundenportal-vision',
       label: 'verbund.com',
@@ -24,40 +26,61 @@ const projects = [
     logo: logoVerbund,
   },
   {
+    name: 'Booking Doc',
+    description:
+      'Bookingdoc ist eine Teletherapieplattform für Ärzte und Patienten, die ich durch die Entwicklung von Apps mit Javascript und Aps.Net unterstützt habe.',
+    link: {
+      href: 'https://www.bookingdoc.at/',
+      label: 'bookingdoc.at',
+    },
+    logo: bookingDoc,
+  },
+  {
     name: 'Enlivio',
     description:
-      'State of the art development of a Flutter app with Flutter and Tensorflow.',
+      'Die enlivio App unterstützt dich beim Training zuhause durch Video-basierte Teletherapie mit deiner Therapeutin und passt deine Übungen regelmäßig an deinen Gesundheitszustand an.',
     link: { href: 'https://www.enlivio.com/', label: 'enlivio.com' },
     logo: logoEnlivio,
   },
   {
+    name: 'Waytation',
+    description:
+      'Die erste Plug-and-Play-Lösung für das Tracking und die Analyse des Besucherweges bei Veranstaltungen wie Messen und Kongressen.',
+    link: { href: 'https://waytation.com/', label: 'waytation.com' },
+    logo: logoWaytation,
+  },
+  {
     name: 'Mediashop',
     description:
-      'In a team of passionate developers, we were building a headless shop-system.',
+      'Für die Neuentwicklung des E-Commerce-Systems setzt MediaShop auf eine Headless React Shop Entwicklung, um ein unterhaltendes Einkaufserlebnis für seine Kunden zu schaffen.',
     link: { href: 'https://www.mediashop.tv/', label: 'mediashop.tv' },
     logo: logoMediashop,
   },
-  // {
-  //   name: 'HelioStream',
-  //   description:
-  //     'Real-time video streaming library, optimized for interstellar transmission.',
-  //   link: { href: '#', label: 'github.com' },
-  //   logo: logoHelioStream,
-  // },
-  // {
-  //   name: 'cosmOS',
-  //   description:
-  //     'The operating system that powers our Planetaria space shuttles.',
-  //   link: { href: '#', label: 'github.com' },
-  //   logo: logoCosmos,
-  // },
-  // {
-  //   name: 'OpenShuttle',
-  //   description:
-  //     'The schematics for the first rocket I designed that successfully made it to orbit.',
-  //   link: { href: '#', label: 'github.com' },
-  //   logo: logoOpenShuttle,
-  // },
+  {
+    name: 'Apoolco',
+    description:
+      'Für Apoolco, den führenden Anbieter im Bereich Pool und Wellness, habe ich als Shopware-Entwickler an der Entwicklung ihres Online-Shops mitgewirkt.',
+    link: { href: 'https://www.apoolco.at/', label: 'apoolco.at' },
+    logo: logoApoolco,
+  },
+]
+
+const feedbacks = [
+  {
+    description:
+      'Als Fullstack Developer hat Herr Siedler den Erwartungen des Unternehmens, der Mitarbeiter und der Kunden in jeglicher Hinsicht und in allerbester Weise entsprochen. Er erfüllte seine Aufgaben zu unserer vollsten Zufriedenheit, mit außerordentlichem Engagement und höchstem Maße an Eigeninitiative, Zielorientierung und Professionalität.',
+    name: 'Cemsit Yelgin',
+
+    image: feedback1,
+    position: 'Waytation CEO',
+  },
+  {
+    description:
+      'Zusammenfassend kann festgehalten werden, dass Herr Siedler die genannten Tätigkeiten selbstständig und stets zu unserer vollsten Zufriedenheit erledigt hat. Er überzeugte durch Zuverlässigkeit, große Einsatzbereitschaft und außergewöhnliches Engagement bei der Lösung der täglichen Arbeitsaufgaben.',
+    name: 'Markus Steinrisser',
+    image: feedback2,
+    position: 'Apoolco Head of Ecommerce',
+  },
 ]
 
 function LinkIcon(props) {
@@ -68,6 +91,43 @@ function LinkIcon(props) {
         fill="currentColor"
       />
     </svg>
+  )
+}
+
+function Feedback() {
+  return (
+    <div className="mt-32 grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2">
+      {feedbacks.map((feedback) => (
+        <div
+          key={feedback.name}
+          className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
+        >
+          <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+            <BriefcaseIcon className="h-6 w-6 flex-none" />
+            <span className="ml-3">Feedback</span>
+          </h2>
+          <figure className="mt-6 flex flex-auto flex-col justify-between ">
+            <blockquote className="text-sm italic text-zinc-900 dark:text-zinc-100">
+              <p>{feedback.description}</p>
+            </blockquote>
+            <figcaption className="mt-10 flex items-center gap-x-4">
+              <Image
+                src={feedback.image}
+                alt=""
+                className="h-10 w-10 rounded-full"
+                unoptimized
+              />
+              <div className="text-base">
+                <div className="font-semibold text-zinc-900 dark:text-zinc-100">
+                  {feedback.name}
+                </div>
+                <div className="text-sm text-gray-400">{feedback.position}</div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      ))}
+    </div>
   )
 }
 
@@ -82,8 +142,9 @@ export default function Projects() {
         />
       </Head>
       <SimpleLayout
-        title="These are the things I've created in my attempt to make a mark on the world."
-        intro="Welcome to my projects page! Here, you will find a collection of my most notable and impactful projects that I am proud to showcase. Each project includes a link to the product, allowing you to explore and interact with the final result. Thank you for taking the time to browse through my portfolio and I hope you find my work inspiring and informative."
+        title="Willkommen auf meiner"
+        fancyTitle="Projektpage!"
+        intro="Hier findest du eine Sammlung von meinen besten und erfolgreichsten Projekten, die ich stolz vorstellen möchte. Jedes Projekt hat einen Link zum Produkt, damit du das Ergebnis selbst erkunden und damit interagieren kannst. Vielen Dank, dass du dir die Zeit nimmst, um durch mein Portfolio zu stöbern. Ich hoffe, dass du meine Arbeit inspirierend und informativ findest!"
       >
         <ul
           role="list"
@@ -91,11 +152,11 @@ export default function Projects() {
         >
           {projects.map((project) => (
             <Card as="li" key={project.name}>
-              <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+              <div className="relative z-10 flex h-14 w-14 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                 <Image
                   src={project.logo}
                   alt=""
-                  className="h-8 w-8 rounded-full"
+                  className="h-10 w-10 rounded-full"
                   unoptimized
                 />
               </div>
@@ -110,6 +171,7 @@ export default function Projects() {
             </Card>
           ))}
         </ul>
+        <Feedback />
       </SimpleLayout>
     </>
   )

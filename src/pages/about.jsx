@@ -6,7 +6,8 @@ import Link from 'next/link'
 import { Container } from '@/components/Container'
 import { GitHubIcon, TwitterIcon } from '@/components/SocialIcons'
 import portraitImage from '@/images/andreas-siedler-portrait.jpg'
-import { CalendarIcon } from '@heroicons/react/20/solid'
+import { ArrowDownIcon, CalendarIcon } from '@heroicons/react/20/solid'
+import { Button } from '@/components/Button'
 
 function SocialLink({ className, target, href, children, icon: Icon }) {
   return (
@@ -211,6 +212,14 @@ export default function About() {
                 Google Meeting
               </SocialLink>
             </ul>
+            {/* <Button
+              href="intent://vnd.android.cursor.dir/raw_contact/#Intent;action=android.intent.action.INSERT;S.email=hello@world.com;S.phone=+1-212-555-1234end;"
+              variant="secondary"
+              className="group mt-6 w-full"
+            >
+              Meine Visitenkarte
+              <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+            </Button> */}
           </div>
         </div>
       </Container>

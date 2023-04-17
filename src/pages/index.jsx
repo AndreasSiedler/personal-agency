@@ -1,35 +1,25 @@
+import clsx from 'clsx'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
-import {
-  GitHubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  TwitterIcon,
-} from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoVerbund from '@/images/logos/verbund.jpeg'
+import feedback1 from '@/images/cemsit-yelgin.jpeg'
 import logoEnlivio from '@/images/logos/enlivio.png'
-import logoWaytation from '@/images/logos/waytation.png'
 import logoMediashop from '@/images/logos/mediashop.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import logoVerbund from '@/images/logos/verbund.jpeg'
+import logoWaytation from '@/images/logos/waytation.png'
 import image1 from '@/images/photos/andreas-siedler-1.jpeg'
 import image2 from '@/images/photos/andreas-siedler-2.jpeg'
-import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/andreas-siedler-3.jpeg'
-import image5 from '@/images/photos/image-4.jpg'
 import image6 from '@/images/photos/andreas-siedler-5.jpeg'
-import feedback1 from '@/images/cemsit-yelgin.jpeg'
+import image3 from '@/images/photos/image-3.jpg'
 import { formatDate } from '@/lib/formatDate'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
+import { BriefcaseIcon, MegaphoneIcon } from '@heroicons/react/20/solid'
 
 function MailIcon(props) {
   return (
@@ -54,42 +44,6 @@ function MailIcon(props) {
   )
 }
 
-function BriefcaseIcon(props) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-      {...props}
-    >
-      <path
-        d="M2.75 9.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
-        className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
-      />
-      <path
-        d="M3 14.25h6.249c.484 0 .952-.002 1.316.319l.777.682a.996.996 0 0 0 1.316 0l.777-.682c.364-.32.832-.319 1.316-.319H21M8.75 6.5V4.75a2 2 0 0 1 2-2h2.5a2 2 0 0 1 2 2V6.5"
-        className="stroke-zinc-400 dark:stroke-zinc-500"
-      />
-    </svg>
-  )
-}
-
-function ArrowDownIcon(props) {
-  return (
-    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
-      <path
-        d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
-
 function Article({ article }) {
   return (
     <Card as="article">
@@ -100,7 +54,7 @@ function Article({ article }) {
         {formatDate(article.date)}
       </Card.Eyebrow>
       <Card.Description>{article.description}</Card.Description>
-      <Card.Cta>Read article</Card.Cta>
+      <Card.Cta>Artikel lesen</Card.Cta>
     </Card>
   )
 }
@@ -180,7 +134,7 @@ function Resume() {
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <BriefcaseIcon className="h-6 w-6 flex-none" />
+        <BriefcaseIcon className="h-6 w-6 flex-none text-gray-500" />
         <span className="ml-3">Work</span>
       </h2>
       <ol className="mt-6 space-y-4">
@@ -223,7 +177,7 @@ function Resume() {
         ))}
       </ol>
       {/* <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
+        Meine Visitenkarte
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button> */}
     </div>
@@ -234,18 +188,18 @@ function Feedback() {
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <BriefcaseIcon className="h-6 w-6 flex-none" />
+        <MegaphoneIcon className="h-6 w-6 flex-none text-gray-500" />
         <span className="ml-3">Feedback</span>
       </h2>
       <figure className="mt-6 flex flex-auto flex-col justify-between ">
         <blockquote className="text-sm italic text-zinc-900 dark:text-zinc-100">
           <p>
-            &quot;Als Fullstack Developer hat Herr Siedler den Erwartungen des
+            Als Fullstack Developer hat Herr Siedler den Erwartungen des
             Unternehmens, der Mitarbeiter und der Kunden in jeglicher Hinsicht
             und in allerbester Weise entsprochen. Er erfüllte seine Aufgaben zu
             unserer vollsten Zufriedenheit, mit außerordentlichem Engagement und
             höchstem Maße an Eigeninitiative, Zielorientierung und
-            Professionalität.&quot;
+            Professionalität.
           </p>
         </blockquote>
         <figcaption className="mt-10 flex items-center gap-x-4">
@@ -299,28 +253,43 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Andreas Siedler - Software designer, freelancer, and dog lover
+          Andreas Siedler - Software designer, IT-freelancer und Hundefreund aus
+          Österreich
         </title>
         <meta
           name="description"
-          content="Hi, I'm Andreas – a software developer, freelancer, and enthusiastic dog lover. I've spent years developing software solutions for businesses and individuals."
+          content="Hey, ich bin Andreas - ein Fullstack-Entwickler mit Schwerpunkt auf Android, iOS, Flutter, React und NodeJS mit Express. Ich arbeite seit Jahren mit kleinen Unternehmen und Privatpersonen zusammen, um einzigartige Anwendungen zu gestalten und umzusetzen. Dabei ist mir eine gute Zusammenarbeit und Kommunikation besonders wichtig, um die Wünsche und Bedürfnisse meiner Kunden bestmöglich umsetzen zu können. Wenn du auf der Suche nach einem erfahrenen Entwickler mit Leidenschaft und Engagement bist, dann bin ich gerne für dich da."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, freelancer, and dog lover.
+          <h1 className="mb-2 overflow-hidden font-mono text-4xl font-bold text-zinc-700 dark:text-gray-100 md:text-6xl">
+            software designer, <br className="block md:hidden" />
+            it-freelancer & <br className="block md:hidden" />
+            <span className="relative">
+              <span className="h-20 overflow-x-hidden whitespace-nowrap pt-2 text-teal-400">
+                hundefreund
+              </span>
+              <span className="{`${styles.cursor} will-change`} cursor absolute -bottom-0 left-0 -top-1 inline-block w-full animate-type bg-white after:bg-zinc-700 dark:bg-zinc-900 dark:after:bg-white"></span>
+            </span>
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Hi, I&apos;m Andreas – a software developer, freelancer, and
-            enthusiastic dog lover. I&apos;ve spent years developing software
-            solutions for businesses and individuals. In my free time,
-            you&apos;ll likely find me playing with my furry best friend. As a
-            dedicated dog lover, I understand the importance of patience,
-            loyalty, and hard work – qualities that I bring to my professional
-            life as well. With a passion for both technology and animals, I
-            offer a unique perspective and diverse skill set to everything I do.
+            Hey, ich bin Andreas - ein Fullstack-Entwickler mit Schwerpunkt auf{' '}
+            <span className="font-bold">
+              Android, iOS, Flutter, React und NodeJS mit Express.
+            </span>{' '}
+            Ich arbeite seit Jahren mit kleinen Unternehmen und Privatpersonen
+            zusammen, um einzigartige Anwendungen zu gestalten und umzusetzen.
+            Dabei ist mir eine gute Zusammenarbeit und Kommunikation besonders
+            wichtig, um die Wünsche und Bedürfnisse meiner Kunden bestmöglich
+            umsetzen zu können. Wenn du auf der Suche nach einem erfahrenen
+            Entwickler mit Leidenschaft und Engagement bist, dann bin ich gerne
+            für dich da.
           </p>
+
+          <Button href="/about" className="mt-6">
+            Mehr zu mir
+          </Button>
           {/* Original */}
           {/* <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             Hi, I&apos;m Andreas – a software developer, founder, and
@@ -333,17 +302,17 @@ export default function Home({ articles }) {
             passion for both technology and animals, I offer a unique
             perspective and diverse skill set to everything I do.
           </p> */}
-          <div className="mt-6 flex gap-6">
+          {/* <div className="mt-6 flex gap-6">
             <SocialLink
               href="https://twitter.com/SiedlerAndreas"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
             />
-            {/* <SocialLink
+            <SocialLink
               href="https://instagram.com"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
-            /> */}
+            />
             <SocialLink
               href="https://github.com/AndreasSiedler"
               aria-label="Follow on GitHub"
@@ -354,7 +323,7 @@ export default function Home({ articles }) {
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
-          </div>
+          </div> */}
         </div>
       </Container>
       <Photos />
