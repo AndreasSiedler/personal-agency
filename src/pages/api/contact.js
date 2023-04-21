@@ -2,7 +2,7 @@ import { HTML_TEMPLATE, sendMail } from '@/utils/mailer'
 
 // Just check if all required fields are provided
 function formValid(body) {
-  return body.email && body.name && body.reachOut && body.message
+  return body.email && body.name && body.reachOut
 }
 
 export default async function handler(req, res) {
