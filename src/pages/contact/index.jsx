@@ -42,8 +42,9 @@ export default function Contact() {
       setIsLoading(false)
 
       if (!response.ok) {
-        router.push('/contact/success')
+        throw new Error(`Invalid response: ${response.status}`)
       }
+      router.push('/contact/success')
     } catch (err) {
       setIsLoading(false)
       alert("We can't submit the form, try again later?")
