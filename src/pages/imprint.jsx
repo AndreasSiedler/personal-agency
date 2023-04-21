@@ -43,13 +43,6 @@ function PhoneIcon(props) {
 export default function ImprintPage() {
   return (
     <>
-      <Head>
-        <title>About - Andreas Siedler</title>
-        <meta
-          name="description"
-          content="I’m Andreas Siedler. I am a passionate software developer based in Vienna."
-        />
-      </Head>
       <Container className="mt-16 sm:mt-32">
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
           <div className="lg:order-first lg:row-span-2">
