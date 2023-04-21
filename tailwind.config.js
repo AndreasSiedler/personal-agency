@@ -300,11 +300,14 @@ module.exports = {
       },
     }),
     extend: {
+      borderWidth: {
+        1: '1px',
+      },
       animation: {
         type: 'type 2.7s ease-out .8s infinite alternate both',
       },
       keyframes: {
-       type: {
+        type: {
           '0%': { transform: 'translateX(0ch)' },
           '5%, 10%': { transform: 'translateX(1ch)' },
           '15%, 20%': { transform: 'translateX(2ch)' },
@@ -317,9 +320,7 @@ module.exports = {
           '85%, 90%': { transform: 'translateX(9ch)' },
           '95%, 100%': { transform: 'translateX(11ch)' },
         },
-
       },
     },
   },
-  
 }

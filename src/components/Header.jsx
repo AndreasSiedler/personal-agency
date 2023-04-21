@@ -1,9 +1,9 @@
-import { Fragment, useEffect, useRef } from 'react'
+import { Popover, Transition } from '@headlessui/react'
+import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { Popover, Transition } from '@headlessui/react'
-import clsx from 'clsx'
+import { Fragment, useEffect, useRef } from 'react'
 
 import { Container } from '@/components/Container'
 import logoImage from '@/images/logo-andreas-siedler.jpg'
@@ -125,6 +125,7 @@ function MobileNavigation(props) {
                 <MobileNavItem href="/about">Über mich</MobileNavItem>
                 <MobileNavItem href="/projects">Projekte</MobileNavItem>
                 <MobileNavItem href="/articles">Artikel</MobileNavItem>
+                <MobileNavItem href="/contact">Kontakt</MobileNavItem>
                 {/* <MobileNavItem href="/speaking">Speaking</MobileNavItem> */}
                 {/* <MobileNavItem href="/uses">Uses</MobileNavItem> */}
                 <MobileNavItem className="whitespace-nowrap" href="/campaigns">
@@ -174,7 +175,7 @@ function DesktopNavigation(props) {
         </NavItem>
         <NavItem href="/projects">Projekte</NavItem>
         <NavItem href="/articles">Artikel</NavItem>
-
+        <NavItem href="/contact">Kontakt</NavItem>
         {/* <NavItem href="/speaking">Speaking</NavItem> */}
         {/* <NavItem href="/uses">Team</NavItem> */}
         {/* <NavItem href="/uses">Uses</NavItem> */}
