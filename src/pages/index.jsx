@@ -286,10 +286,10 @@ export default function Home({ articles }) {
             Entwickler mit Leidenschaft und Engagement bist, dann bin ich gerne
             für dich da.
           </p>
+          <Link href="/about">
+            <Button className="mt-6">Mehr zu mir</Button>
+          </Link>
 
-          <Button href="/about" className="mt-6">
-            Mehr zu mir
-          </Button>
           {/* Original */}
           {/* <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             Hi, I&apos;m Andreas – a software developer, founder, and

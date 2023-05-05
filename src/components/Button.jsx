@@ -1,5 +1,4 @@
 import clsx from 'clsx'
-import Link from 'next/link'
 import LoadingSpinner from './LoadingSpinner'
 
 const variantStyles = {
@@ -11,9 +10,8 @@ const variantStyles = {
 
 export function Button({
   variant = 'primary',
-  isLoading,
+  isLoading = false,
   className,
-  href,
   children,
   ...props
 }) {
@@ -23,9 +21,7 @@ export function Button({
     className
   )
 
-  return href ? (
-    <Link href={href} className={className} {...props} />
-  ) : (
+  return (
     <button className={className} {...props}>
       {isLoading ? (
         <div>

@@ -122,7 +122,7 @@ export default function Contact() {
           )}
         </div>
 
-        <Button isLoading={isLoading} className="mt-10 w-96 sm:w-1/2">
+        <Button isLoading={isLoading} className="mt-10 sm:w-1/2">
           Senden
         </Button>
       </form>
