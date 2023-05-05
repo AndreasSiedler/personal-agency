@@ -1,28 +1,11 @@
-import clsx from 'clsx'
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
 
 import { Container } from '@/components/Container'
 import { GitHubIcon, TwitterIcon } from '@/components/SocialIcons'
+import SocialLink from '@/components/SocialLink'
 import portraitImage from '@/images/andreas-siedler-portrait.jpg'
-import { ArrowDownIcon, CalendarIcon } from '@heroicons/react/20/solid'
-import { Button } from '@/components/Button'
-
-function SocialLink({ className, target, href, children, icon: Icon }) {
-  return (
-    <li className={clsx(className, 'flex')}>
-      <Link
-        target={target}
-        href={href}
-        className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
-      >
-        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
-        <span className="ml-4">{children}</span>
-      </Link>
-    </li>
-  )
-}
+import { CalendarIcon } from '@heroicons/react/20/solid'
 
 function MailIcon(props) {
   return (

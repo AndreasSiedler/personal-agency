@@ -12,10 +12,10 @@ export default function ContactSuccess() {
         ></path>
       </svg>
       <div className="text-center">
-        <h3 className="text-center text-base font-semibold text-gray-900 md:text-2xl">
+        <h3 className="text-center text-base font-semibold text-gray-900 dark:text-white md:text-2xl">
           Erfolgreich gesendet!
         </h3>
-        <p className="my-2 mx-auto max-w-lg text-center text-gray-600">
+        <p className="my-2 mx-auto max-w-lg text-center text-gray-500">
           Vielen Dank für Ihre Kontaktanfrage! Ich schätze Ihr Interesse an
           meinen Freelance-Dienstleistungen sehr. Ich werde Ihre Anfrage so
           schnell wie möglich bearbeiten und melde mich in Kürze bei Ihnen
