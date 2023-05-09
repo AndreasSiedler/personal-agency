@@ -125,12 +125,11 @@ function MobileNavigation(props) {
                 <MobileNavItem href="/about">Über mich</MobileNavItem>
                 <MobileNavItem href="/projects">Projekte</MobileNavItem>
                 <MobileNavItem href="/articles">Artikel</MobileNavItem>
-                <MobileNavItem href="/contact">Kontakt</MobileNavItem>
                 {/* <MobileNavItem href="/speaking">Speaking</MobileNavItem> */}
                 {/* <MobileNavItem href="/uses">Uses</MobileNavItem> */}
-                <MobileNavItem className="whitespace-nowrap" href="/campaigns">
+                <MobileNavItem className="whitespace-nowrap" href="/contact">
                   <span className="rounded-full bg-teal-400 py-1 px-2 text-white">
-                    Aktionen
+                    Kontakt
                   </span>
                 </MobileNavItem>
               </ul>
@@ -175,13 +174,13 @@ function DesktopNavigation(props) {
         </NavItem>
         <NavItem href="/projects">Projekte</NavItem>
         <NavItem href="/articles">Artikel</NavItem>
-        <NavItem href="/contact">Kontakt</NavItem>
+        {/* <NavItem href="/contact">Kontakt</NavItem> */}
         {/* <NavItem href="/speaking">Speaking</NavItem> */}
         {/* <NavItem href="/uses">Team</NavItem> */}
         {/* <NavItem href="/uses">Uses</NavItem> */}
-        <NavItem className="whitespace-nowrap" href="/campaigns">
+        <NavItem className="whitespace-nowrap" href="/contact">
           <span className="rounded-full bg-teal-400 py-1 px-2 text-white">
-            Aktionen
+            Kontakt
           </span>
         </NavItem>
       </ul>
