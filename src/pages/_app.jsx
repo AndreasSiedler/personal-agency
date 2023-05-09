@@ -23,7 +23,7 @@ export default function App({ Component, pageProps, router }) {
   let previousPathname = usePrevious(router.pathname)
 
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider defaultTheme="dark" attribute="class">
       <Script
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_ID}`}
