@@ -77,21 +77,36 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Kontaktformular - Andreas Siedler</title>
+        <title>Kontaktiere mich - Ich freue mich, von dir zu hören!</title>
         <meta
           name="description"
-          content="I’m Andreas Siedler. I am a passionate software developer based in Vienna."
+          content="Hier findest du den direkten Draht zu mir. Ich stehe bereit, um auf deine Fragen zu antworten, dich zu unterstützen oder gemeinsam an neuen Projekten zu arbeiten."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
           <div className="lg:order-first lg:row-span-2">
+            <h1 className="mb-2 overflow-hidden font-mono text-4xl font-bold text-zinc-700 dark:text-gray-100 md:text-6xl">
+              Ich freue mich, von dir zu hören!
+            </h1>
+
+            <div className="mt-6 mb-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+              <p>
+                Hier findest du den direkten Draht zu mir. Ich stehe bereit, um
+                auf deine Fragen zu antworten, dich zu unterstützen oder
+                gemeinsam an neuen Projekten zu arbeiten. Schick mir einfach
+                eine Nachricht über das Kontaktformular und ich werde mich
+                umgehend bei dir melden. Lass uns zusammen großartige Ideen
+                verwirklichen und deine Ziele erreichen. Ich freue mich darauf,
+                von dir zu hören!
+              </p>
+            </div>
             <div className="space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div className="input-wrapper flex flex-col">
                     <label className="font-lato-bold" htmlFor="name">
-                      Name*
+                      Name*s
                     </label>
                     <input
                       className="rounded-lg border-1 border-gray-500 bg-transparent p-5 dark:border-white"

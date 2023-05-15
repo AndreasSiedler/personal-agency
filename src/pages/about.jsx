@@ -30,10 +30,12 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About - Andreas Siedler</title>
+        <title>
+          Dein erfahrener Fullstack-Entwickler für einzigartige Anwendungen
+        </title>
         <meta
           name="description"
-          content="I’m Andreas Siedler. I am a passionate software developer based in Vienna."
+          content="Hey, ich bin Andreas - ein Fullstack-Entwickler mit Schwerpunkt auf React, Flutter, Python Django und NodeJS mit Express. Ich arbeite seit Jahren mit kleinen Unternehmen und Privatpersonen zusammen, um einzigartige Anwendungen zu gestalten und umzusetzen. Dabei ist mir eine gute Zusammenarbeit und Kommunikation besonders wichtig, um die Wünsche und Bedürfnisse meiner Kunden bestmöglich umsetzen zu können. Wenn du auf der Suche nach einem erfahrenen Entwickler mit Leidenschaft und Engagement bist, dann bin ich gerne für dich da."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">

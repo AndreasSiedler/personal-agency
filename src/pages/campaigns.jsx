@@ -44,10 +44,11 @@ export default function CampaignsPage() {
   return (
     <>
       <Head>
-        <title>About - Andreas Siedler</title>
+        <title>Mega Frühjahrsangebot: 10% Rabatt auf alle Projekte</title>
         <meta
           name="description"
-          content="I’m Andreas Siedler. I am a passionate software developer based in Vienna."
+          content="Ich wollte euch nur schnell mitteilen, dass wir gerade ein mega Frühjahrsangebot haben! Starte jetzt
+          dein Traumprojekt!"
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
