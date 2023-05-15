@@ -106,7 +106,7 @@ export default function Contact() {
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div className="input-wrapper flex flex-col">
                     <label className="font-lato-bold" htmlFor="name">
-                      Name*s
+                      Name*
                     </label>
                     <input
                       className="rounded-lg border-1 border-gray-500 bg-transparent p-5 dark:border-white"
