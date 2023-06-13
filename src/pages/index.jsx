@@ -231,7 +231,7 @@ export default function Home({ articles }) {
             it-freelancer & <br className="block md:hidden" />
             <span className="relative">
               <span className="h-20 overflow-x-hidden whitespace-nowrap pt-2 text-teal-400">
-                hundefreund
+                doglover 🐕
               </span>
               <span className="{`${styles.cursor} will-change`} cursor absolute -bottom-0 left-0 -top-1 inline-block w-full animate-type bg-white after:bg-zinc-700 dark:bg-zinc-900 dark:after:bg-white"></span>
             </span>
@@ -239,15 +239,15 @@ export default function Home({ articles }) {
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             Hey, ich bin Andreas - ein Fullstack-Entwickler mit Schwerpunkt auf{' '}
             <span className="font-bold">
-              Android, iOS, Flutter, React und NodeJS mit Express.
+              Websites, Webapps und Mobile-Apps.
             </span>{' '}
             Ich arbeite seit Jahren mit kleinen Unternehmen und Privatpersonen
-            zusammen, um einzigartige Anwendungen zu gestalten und umzusetzen.
-            Dabei ist mir eine gute Zusammenarbeit und Kommunikation besonders
-            wichtig, um die Wünsche und Bedürfnisse meiner Kunden bestmöglich
-            umsetzen zu können. Wenn du auf der Suche nach einem erfahrenen
-            Entwickler mit Leidenschaft und Engagement bist, dann bin ich gerne
-            für dich da.
+            zusammen, um außergewöhnliche Anwendungen zu gestalten und
+            umzusetzen. Dabei ist mir eine gute Zusammenarbeit und Kommunikation
+            besonders wichtig, um die Wünsche und Bedürfnisse meiner Kunden
+            bestmöglich umsetzen zu können. Wenn du auf der Suche nach einem
+            erfahrenen Entwickler mit Leidenschaft und Engagement bist, dann bin
+            ich gerne für dich da.
           </p>
           <Link href="/about">
             <Button className="mt-6">Mehr zu mir</Button>

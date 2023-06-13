@@ -64,20 +64,14 @@ export default function About() {
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
                 Ich liebe es, Websites und Anwendungen zu entwickeln, die das
-                Leben der Menschen erleichtern und verbessern. Ich habe mich auf
-                React und Flutter im Frontend sowie Python Django und NodeJS mit
-                Express im Backend spezialisiert und verfüge über umfangreiche
-                Kenntnisse in verschiedenen Programmiersprachen und Frameworks
-                wie Angular und NextJS sowie Laravel.
-              </p>
-              <p>
-                Ich arbeite schon seit einigen Jahren als Entwickler und habe
-                mich darauf spezialisiert, Anwendungen für kleinere Unternehmen
-                und Privatpersonen zu gestalten und umzusetzen. Es ist einfach
-                großartig, wenn man eine Idee hat und sie in die Tat umsetzen
-                kann. Ich bin stolz darauf, jedes Projekt von Anfang bis Ende
-                betreuen zu können, um sicherzustellen, dass das Endprodukt
-                perfekt ist.
+                Leben der Menschen erleichtern und verbessern. Schon seit
+                einigen Jahren arbeite ich als freiberuflicher Entwickler und
+                habe mich darauf spezialisiert, Anwendungen für kleinere
+                Unternehmen und Privatpersonen zu gestalten und umzusetzen. Es
+                ist einfach großartig, wenn man eine Idee hat und sie in die Tat
+                umsetzen kann. Ich bin stolz darauf, jedes Projekt von Anfang
+                bis Ende betreuen zu können, um sicherzustellen, dass das
+                Endprodukt perfekt ist.
               </p>
               <p>
                 Ich finde es auch toll, bei der Gestaltung von Anwendungen
@@ -87,14 +81,9 @@ export default function About() {
               </p>
               <p>
                 Wenn du jemanden suchst, der mit Leidenschaft und Engagement an
-                deinem Projekt arbeitet, bin ich gerne für dich da. Darüber
-                hinaus kann ich auch bei der Beantragung von Fördermitteln wie
-                KMU digital unterstützen, mit denen du bis zu 30% der Kosten
-                einsparen kannst.
-              </p>
-              <p>
-                Ich freue mich darauf, von dir zu hören und gemeinsam mit dir
-                großartige Projekte zu realisieren.
+                deinem Projekt arbeitet, bin ich gerne für dich da. Ich freue
+                mich darauf, von dir zu hören und gemeinsam mit dir großartige
+                Projekte zu realisieren.
               </p>
             </div>
             {/* <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">

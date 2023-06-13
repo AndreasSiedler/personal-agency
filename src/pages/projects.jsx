@@ -28,7 +28,7 @@ const projects = [
   {
     name: 'Booking Doc',
     description:
-      'Bookingdoc ist eine Teletherapieplattform für Ärzte und Patienten, die ich durch die Entwicklung von Apps mit Javascript und Aps.Net unterstützt habe.',
+      'Bookingdoc ist eine Teletherapieplattform für Ärzte und Patienten, die ich durch die Entwicklung von Apps mit Javascript und ASP.Net unterstützt habe.',
     link: {
       href: 'https://www.bookingdoc.at/',
       label: 'bookingdoc.at',
