@@ -1,11 +1,47 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
+import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import { GitHubIcon, TwitterIcon } from '@/components/SocialIcons'
 import SocialLink from '@/components/SocialLink'
 import portraitImage from '@/images/andreas-siedler-portrait.jpg'
 import { CalendarIcon } from '@heroicons/react/20/solid'
+import {
+  SiAngular,
+  SiDjango,
+  SiFlutter,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiReact,
+} from 'react-icons/si'
+
+const skills = [
+  {
+    name: 'React',
+    icon: SiReact,
+  },
+  {
+    name: 'NextJS',
+    icon: SiNextdotjs,
+  },
+  {
+    name: 'Flutter',
+    icon: SiFlutter,
+  },
+  {
+    name: 'Angular',
+    icon: SiAngular,
+  },
+  {
+    name: 'Node',
+    icon: SiNodedotjs,
+  },
+  {
+    name: 'Django',
+    icon: SiDjango,
+  },
+]
 
 function MailIcon(props) {
   return (
@@ -86,53 +122,25 @@ export default function About() {
                 Projekte zu realisieren.
               </p>
             </div>
-            {/* <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              Hi there, my name is Andreas and I am a passionate software
-              developer based in Vienna.
-            </h1>
-            <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-              <p>
-                For as long as I can remember, I have always been fascinated by
-                the way technology works and how it can be leveraged to solve
-                real-world problems. Over the years, I have gained a wealth of
-                experience in software development, and I am now proud to offer
-                my expertise to companies and individuals who are seeking to
-                bring their ideas to life.
-              </p>
-              <p>
-                As a freelancer, I take a unique approach to each project I
-                undertake. I believe that the key to successful software
-                development lies in understanding the unique needs of each
-                client and working closely with them to create innovative and
-                effective solutions. Whether you&apos;re a startup looking to
-                build a new product from scratch, or an established business
-                seeking to improve your existing software, I am here to help you
-                achieve your goals.
-              </p>
-              <p>
-                One of the things I love most about software development is the
-                endless possibilities it presents. There is always something new
-                to learn, a new tool to master, or a new challenge to overcome.
-                I am constantly expanding my skill set, learning new programming
-                languages, and exploring new frameworks and technologies. This
-                allows me to stay at the cutting edge of the industry and to
-                offer my clients the very best in software development.
-              </p>
-              <p>
-                When I&apos;m not busy coding, you can usually find me spending
-                time with my furry friend, a lovable and energetic dog. I
-                believe that a balanced life is essential for creativity and
-                productivity, and I always make time for the things that matter
-                most to me.
-              </p>
-              <p>
-                So, if you&apos;re looking for a skilled software developer who
-                is passionate, creative, and dedicated to delivering results,
-                then look no further than me. I am excited to work with you to
-                bring your ideas to life and to help you achieve your goals. Get
-                in touch with me today to learn more about how I can help you!
-              </p>
-            </div> */}
+            <ul
+              role="list"
+              className="mt-12 grid grid-cols-3 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
+            >
+              {skills.map((skill) => (
+                <Card
+                  as="li"
+                  key={skill.name}
+                  className="flex items-center justify-center"
+                >
+                  <div className="relative z-10 flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                    <skill.icon className="h-10 w-10" />
+                  </div>
+                  <h2 className="text-base font-semibold text-zinc-800 dark:text-zinc-100">
+                    {skill.name}
+                  </h2>
+                </Card>
+              ))}
+            </ul>
           </div>
           <div className="lg:pl-20">
             <ul role="list">
