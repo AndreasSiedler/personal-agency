@@ -215,10 +215,7 @@ export default function Home({ articles }) {
   return (
     <>
       <Head>
-        <title>
-          Andreas Siedler - Software designer, IT-freelancer und Hundefreund aus
-          Österreich
-        </title>
+        <title>Andreas Siedler - Web-Freelancer aus Österreich</title>
         <meta
           name="description"
           content="Hey, ich bin Andreas - ein Fullstack-Entwickler mit Schwerpunkt auf Android, iOS, Flutter, React und NodeJS mit Express. Ich arbeite seit Jahren mit kleinen Unternehmen und Privatpersonen zusammen, um einzigartige Anwendungen zu gestalten und umzusetzen. Dabei ist mir eine gute Zusammenarbeit und Kommunikation besonders wichtig, um die Wünsche und Bedürfnisse meiner Kunden bestmöglich umsetzen zu können. Wenn du auf der Suche nach einem erfahrenen Entwickler mit Leidenschaft und Engagement bist, dann bin ich gerne für dich da."
@@ -227,66 +224,28 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="mb-2 overflow-hidden font-mono text-4xl font-bold text-zinc-700 dark:text-gray-100 md:text-6xl">
-            software designer, <br className="block md:hidden" />
-            it-freelancer & <br className="block md:hidden" />
-            <span className="relative">
-              <span className="h-20 overflow-x-hidden whitespace-nowrap pt-2 text-teal-400">
-                doglover 🐕
-              </span>
-              <span className="{`${styles.cursor} will-change`} cursor absolute -bottom-0 left-0 -top-1 inline-block w-full animate-type bg-white after:bg-zinc-700 dark:bg-zinc-900 dark:after:bg-white"></span>
-            </span>
+            Freelancer aus Österreich
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Hey, ich bin Andreas - ein Fullstack-Entwickler mit Schwerpunkt auf{' '}
+            Hey, ich bin Andreas - Fullstack-Entwickler aus Österreich und
+            spezialisiert auf{' '}
             <span className="font-bold">
               Websites, Webapps und Mobile-Apps.
             </span>{' '}
-            Ich arbeite seit Jahren mit kleinen Unternehmen und Privatpersonen
-            zusammen, um außergewöhnliche Anwendungen zu gestalten und
-            umzusetzen. Dabei ist mir eine gute Zusammenarbeit und Kommunikation
-            besonders wichtig, um die Wünsche und Bedürfnisse meiner Kunden
-            bestmöglich umsetzen zu können. Wenn du auf der Suche nach einem
-            erfahrenen Entwickler mit Leidenschaft und Engagement bist, dann bin
-            ich gerne für dich da.
+            Ich arbeite als externer Freelancer für ein großes österreichisches
+            Unternehmen und nebenbei möchte ich kleinen und mittleren
+            Unternehmen sowie Privatpersonen helfen, ihre Ideen für digitale
+            Produkte in die Realität umzusetzen.
+          </p>
+          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+            Dabei ist mir eine gute und unkomplizierte Zusammenarbeit und
+            Kommunikation besonders wichtig, so kann ich auf Wünsche bestmöglich
+            reagieren. Wenn du auf der Suche nach einem erfahrenen Entwickler
+            mit Leidenschaft und Engagement bist, dann melde dich bei mir.
           </p>
           <Link href="/about">
             <Button className="mt-6">Mehr zu mir</Button>
           </Link>
-
-          {/* Original */}
-          {/* <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Hi, I&apos;m Andreas – a software developer, founder, and
-            enthusiastic dog lover. I&apos;ve spent years developing software
-            solutions for businesses and individuals, and have even launched my
-            own successful startup. In my free time, you&apos;ll likely find me
-            playing with my furry best friend. As a dedicated dog lover, I
-            understand the importance of patience, loyalty, and hard work –
-            qualities that I bring to my professional life as well. With a
-            passion for both technology and animals, I offer a unique
-            perspective and diverse skill set to everything I do.
-          </p> */}
-          {/* <div className="mt-6 flex gap-6">
-            <SocialLink
-              href="https://twitter.com/SiedlerAndreas"
-              aria-label="Follow on Twitter"
-              icon={TwitterIcon}
-            />
-            <SocialLink
-              href="https://instagram.com"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            />
-            <SocialLink
-              href="https://github.com/AndreasSiedler"
-              aria-label="Follow on GitHub"
-              icon={GitHubIcon}
-            />
-            <SocialLink
-              href="https://www.linkedin.com/in/andreas-siedler-8415a8b8/"
-              aria-label="Follow on LinkedIn"
-              icon={LinkedInIcon}
-            />
-          </div> */}
         </div>
       </Container>
       <Photos />
