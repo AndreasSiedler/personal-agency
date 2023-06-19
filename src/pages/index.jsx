@@ -218,7 +218,7 @@ export default function Home({ articles }) {
         <title>Andreas Siedler - Web-Freelancer aus Österreich</title>
         <meta
           name="description"
-          content="Hey, ich bin Andreas - ein Fullstack-Entwickler mit Schwerpunkt auf Android, iOS, Flutter, React und NodeJS mit Express. Ich arbeite seit Jahren mit kleinen Unternehmen und Privatpersonen zusammen, um einzigartige Anwendungen zu gestalten und umzusetzen. Dabei ist mir eine gute Zusammenarbeit und Kommunikation besonders wichtig, um die Wünsche und Bedürfnisse meiner Kunden bestmöglich umsetzen zu können. Wenn du auf der Suche nach einem erfahrenen Entwickler mit Leidenschaft und Engagement bist, dann bin ich gerne für dich da."
+          content="Hey, ich bin Andreas - Fullstack-Entwickler aus Österreich und spezialisiert auf Websites, Webapps und Mobile-Apps. Ich arbeite als externer Freelancer für ein großes österreichisches Unternehmen und nebenbei möchte ich kleinen und mittleren Unternehmen sowie Privatpersonen helfen, ihre Ideen für digitale Produkte in die Realität umzusetzen."
         />
       </Head>
       <Container className="mt-9">
