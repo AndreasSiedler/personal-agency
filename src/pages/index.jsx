@@ -12,9 +12,9 @@ import logoMediashop from '@/images/logos/mediashop.svg'
 import logoVerbund from '@/images/logos/verbund.jpeg'
 import logoWaytation from '@/images/logos/waytation.png'
 import image1 from '@/images/photos/andreas-siedler-1.jpeg'
-import image2 from '@/images/photos/andreas-siedler-2.jpeg'
+import image6 from '@/images/photos/andreas-siedler-2.jpeg'
 import image4 from '@/images/photos/andreas-siedler-3.jpeg'
-import image6 from '@/images/photos/andreas-siedler-5.jpeg'
+import image2 from '@/images/photos/andreas-siedler-6.jpeg'
 import image3 from '@/images/photos/image-3.jpg'
 import { formatDate } from '@/lib/formatDate'
 import { generateRssFeed } from '@/lib/generateRssFeed'
@@ -190,7 +190,7 @@ function Photos() {
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image3, image1, image2, image4, image6].map((image, imageIndex) => (
+        {[image3, image2, image1, image4, image6].map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
