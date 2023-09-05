@@ -5,9 +5,11 @@ import { Header } from '@/components/Header'
 import Script from 'next/script'
 
 import Banner from '@/components/Banner'
+import ComingSoon from '@/components/ComingSoon'
 import '@/styles/tailwind.css'
 import 'focus-visible'
 import { ThemeProvider } from 'next-themes'
+const COMING_SOON = true
 
 function usePrevious(value) {
   let ref = useRef()
@@ -21,6 +23,7 @@ function usePrevious(value) {
 
 export default function App({ Component, pageProps, router }) {
   let previousPathname = usePrevious(router.pathname)
+  const { showHeader = true } = pageProps
 
   return (
     <ThemeProvider defaultTheme="dark" attribute="class">
@@ -45,14 +48,18 @@ export default function App({ Component, pageProps, router }) {
           <div className="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20" />
         </div>
       </div>
-      <div className="relative">
-        <Banner />
-        <Header />
-        <main>
-          <Component previousPathname={previousPathname} {...pageProps} />
-        </main>
-        <Footer />
-      </div>
+      {COMING_SOON ? (
+        <ComingSoon />
+      ) : (
+        <div className="relative">
+          <Banner />
+          {showHeader && <Header />}
+          <main>
+            <Component previousPathname={previousPathname} {...pageProps} />
+          </main>
+          <Footer />
+        </div>
+      )}
     </ThemeProvider>
   )
 }
